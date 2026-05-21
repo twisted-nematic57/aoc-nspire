@@ -120,3 +120,12 @@ for day in {1..12}; do
 done
 
 echo "Done! All scripts generated successfully."
+
+#Then move all generated .py files to their own dir and run `for f in day_*_*.py; do [[ "$f" =~ day_([0-9]{4})_([0-9]+)\.py ]] && mv -n "$f" $(printf "y%sd%02d.py" "${BASH_REMATCH[1]}" "${BASH_REMATCH[2]}"); done`
+# to rename them to a more compact, better format
+
+
+
+
+
+
