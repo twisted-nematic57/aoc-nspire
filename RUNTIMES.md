@@ -4,7 +4,7 @@ All values recorded here are measures of **core algorithmic runtime** and disreg
 
 All measurements were taken while no pages except a clean Python Shell were open to minimize interfering activity. All measurements were taken on a non-overclocked Revision AU TI-Nspire CX II CAS that was not plugged into USB and had no accessories attached.
 
-Note that the most accurate program runtimes I could measure were via the TI-Nspire CX II CAS's built-in timekeeper hardware, which when read from via the MicroPython `time` library, has 10 ms precision.
+Note that the most accurate program runtimes I could measure were via the calculator's built-in timekeeper hardware, which when read from via the MicroPython `time` library, has 10 ms precision.
 
 ## 2015
 
