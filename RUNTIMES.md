@@ -4,35 +4,37 @@ All values recorded here are measures of **core algorithmic runtime** and disreg
 
 All measurements were taken while no pages except a clean Python Shell were open to minimize interfering activity. All measurements were taken on a non-overclocked Revision AU TI-Nspire CX II CAS that was not plugged into USB and had no accessories attached.
 
-Note that the most accurate program runtimes I could measure were via the calculator's built-in timekeeper hardware, which when read from via the MicroPython `time` library, has 10 ms precision.
+Runtimes slightly fluctuate run-to-run. Absolute minimum, best-case values that have ever occured over dozens of runs are recorded in the tables below.
+
+Note that `ticks_ms()` on this MicroPython platform has 0.01 second precision.
 
 ## 2015
 
-| Day             | Time (s) |
-| --------------- | -------- |
-| 1               |          |
-| 2               |          |
-| 3               |          |
-| 4               |          |
-| 5               |          |
-| 6               |          |
-| 7               |          |
-| 8               |          |
-| 9               |          |
-| 10              |          |
-| 11              |          |
-| 12              |          |
-| 13              |          |
-| 14              |          |
-| 15              |          |
-| 16              |          |
-| 17              |          |
-| 18              |          |
-| 19              |          |
-| 20              |          |
-| 21              |          |
-| 22              |          |
-| 23              |          |
-| 24              |          |
-| 25              |          |
-| **Total** |          |
+| Day             | Part 1 Time (s) | Part 2 Time (s) |
+| --------------- | ---------------- | ---------------- |
+| 1               | 0.02             | 0.01             |
+| 2               |                  |                  |
+| 3               |                  |                  |
+| 4               |                  |                  |
+| 5               |                  |                  |
+| 6               |                  |                  |
+| 7               |                  |                  |
+| 8               |                  |                  |
+| 9               |                  |                  |
+| 10              |                  |                  |
+| 11              |                  |                  |
+| 12              |                  |                  |
+| 13              |                  |                  |
+| 14              |                  |                  |
+| 15              |                  |                  |
+| 16              |                  |                  |
+| 17              |                  |                  |
+| 18              |                  |                  |
+| 19              |                  |                  |
+| 20              |                  |                  |
+| 21              |                  |                  |
+| 22              |                  |                  |
+| 23              |                  |                  |
+| 24              |                  |                  |
+| 25              |                  |                  |
+| **Total** |                  |                  |

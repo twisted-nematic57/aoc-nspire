@@ -1,3 +1,6 @@
 # Things that may possibly contain AoC-provided inputs
 temp_workspace
 adventofcode.tns
+
+# None of your business
+transfer_tns.sh

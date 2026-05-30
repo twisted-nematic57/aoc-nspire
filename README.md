@@ -1,6 +1,6 @@
 # aoc-nspire
 
-### Latest completed problem: TBD **(0/262)**
+### Latest completed problem: 2015 Day 1 Part 2 **(2/262)**
 
 The goal is simple: **Solve every Advent of Code problem in TI-Nspire MicroPython using just over 2MB of heap space per problem.** In a world full of bloated, vibecoded slop, it's important to remember that it *is* possible to do meaningful work using small amounts of memory regardless of how high-level your programming language may seem. All it takes is human intelligence and patience.
 
