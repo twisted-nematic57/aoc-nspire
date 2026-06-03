@@ -13,7 +13,7 @@ Note that `ticks_ms()` on this MicroPython platform has 0.01 second precision.
 | Day             | Part 1 Time (s) | Part 2 Time (s) |
 | --------------- | ---------------- | ---------------- |
 | 1               | 0.02             | 0.01             |
-| 2               |                  |                  |
+| 2               | 0.91             | 0.90             |
 | 3               |                  |                  |
 | 4               |                  |                  |
 | 5               |                  |                  |
