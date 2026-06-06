@@ -2,7 +2,7 @@
 
 All values recorded here are measures of **core algorithmic runtime** and disregard initial script initialization & output printing. Print statements are disabled by changing the global variable `l` to 0 at the top of the solution source code; Because it is declared as `const`, *no checks are made at runtime* to decide if print statements should run or not. See [template.py](./template.py) to see the code corresponding to all this.
 
-All measurements were taken while no pages except a clean Python Shell were open to minimize interfering activity. All measurements were taken on a non-overclocked Revision AU TI-Nspire CX II CAS that was not plugged into USB and had no accessories attached.
+All measurements were taken on a non-overclocked Revision AU TI-Nspire CX II CAS that was not plugged into USB and had no accessories attached.
 
 Runtimes slightly fluctuate run-to-run. Absolute minimum, best-case values that have ever occured over dozens of runs are recorded in the tables below.
 
@@ -14,7 +14,7 @@ Note that `ticks_ms()` on this MicroPython platform has 0.01 second precision.
 | --------------- | ---------------- | ---------------- |
 | 1               | 0.02             | 0.01             |
 | 2               | 0.91             | 0.90             |
-| 3               |                  |                  |
+| 3               | 51.38            | 49.40            |
 | 4               |                  |                  |
 | 5               |                  |                  |
 | 6               |                  |                  |
