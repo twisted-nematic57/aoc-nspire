@@ -1,6 +1,6 @@
 #SolveKit-nspire
 #AoC Solution Runner & Benchmarker
-#Released under the AGPLv3
+#Released under the MIT License
 #See ./LICENSE and ./README.md in the Git
 # repo for license plaintext and documentation
 
