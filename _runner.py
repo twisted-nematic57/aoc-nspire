@@ -9,13 +9,13 @@ def main():
   # the solution reference and benchmarking
   # iteration count.
   
-  import y2015d01 as _s #Solution selector
-  _part=const(0) #Part to run minus 1 (0 or 1)
-  _loud=const(1) #(dis/en)able console output
+  import y2015d01 as s #Solution selector
+  part=const(0) #Part to run minus 1 (0 or 1)
+  loud=const(1) #(dis/en)able console output
   
-  _mode=const(0) #0=one run; 1=benchmark
-  _iters=const(1024) #Benchmarking iterations
-  _m=const(1) #Print benchmarking progress?
+  mode=const(0) #0=one run; 1=benchmark
+  iters=const(1024) #Benchmarking iterations
+  m=const(1) #Print benchmarking progress?
   
   # ---- Start of internal runner logic -------
   import gc
@@ -32,23 +32,22 @@ def main():
     print("Heap used/free (kB): "+mround(gc.mem_alloc()/1000,3)+"/"+mround(gc.mem_free()/1000,3))
   
   # ---- RUNNER CORE --------------
-  _tstart=0 #Preinit these to save some μs(?)
-  _tend=0
-  target=_s.part2 if _part else _s.part1
+  tstart=0 #Preinit these to save a few ns :skull:
+  tend=0
+  target=s.part2 if part else s.part1
   
-  if _mode: #Benchmark
-    runtimes=[0.0]*_iters
+  if mode: #Benchmark
+    runtimes=[0.0]*iters
     tstr=""
-    for i in range(_iters):
+    for i in range(iters):
       gc.collect()
       #-BEGIN PERF. CRIT. SEGMENT-
-      _tstart=ticks_ms()
-      target(_loud)
-      _tend=ticks_ms()
+      tstart=ticks_ms()
+      target(loud)
+      tend=ticks_ms()
       #-END PERF. CRIT. SEGMENT-
-      #runtimes.append(mround(ticks_diff(_tend,_tstart)/1000,2))
-      tstr=mround(ticks_diff(_tend,_tstart)/1000,2)
-      if _m: print("Run "+str(i+1)+" (s): "+tstr)
+      tstr=mround(ticks_diff(tend,tstart)/1000,2)
+      if m: print("Run "+str(i+1)+" (s): "+tstr)
       runtimes[i]=float(tstr)
     print("-----------------------------------")
     print("Saving & computing statistics…")
@@ -58,13 +57,13 @@ def main():
   else: #Single run
     gc.collect()
     #-BEGIN PERF. CRIT. SEGMENT-
-    _tstart=ticks_ms()
-    target(_loud)
-    _tend=ticks_ms()
+    tstart=ticks_ms()
+    target(loud)
+    tend=ticks_ms()
     #-END PERF. CRIT. SEGMENT-
     
     print("-----------------------------------")
-    print("Total time (s): "+mround(ticks_diff(_tend,_tstart)/1000,2))
+    print("Total time (s): "+mround(ticks_diff(tend,tstart)/1000,2))
     printmeminfo()
 
 main()
