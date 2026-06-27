@@ -20,10 +20,10 @@
 
 ; PROBLEM-SPECIFIC NOTES:
 ; - You're going to have to paste Day 7 of 2016 manually in chunks. It is too large to be pasted all at once (software-enforced limit by Nspire Software). This macro automatically skips Day 7 of 2016.
-; - Day 8 of 2015 and Day 9 of 2017 and may contain a sequence of three quotes in the input (literally: """) so you may need to escape those manually using \ OR change the surrounding quotes to literally '''.
+; - Day 8 of 2015 and Day 9 of 2017 and may contain a sequence of three quotes in the input (literally: """) so you may need to escape those manually using '\' or replace the endpoint triple double quotes with triple single quotes.
 
 #NoEnv
-SendMode Input
+SendMode Input`
 SetWorkingDir %A_ScriptDir%
 
 ; ---- CONFIGURATION (all range endpoint values are INCLUSIVE)

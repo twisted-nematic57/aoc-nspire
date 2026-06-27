@@ -1,8 +1,8 @@
 # aoc-nspire
 
-### Latest completed problem: 2015 Day 3 Part 2 **(6/262)**
+### Latest completed problem: 2015 Day 1 Part 2 **(2/262)**
 
-The goal is simple: **Solve every Advent of Code problem in TI-Nspire MicroPython using just over 2MB of heap space per problem.** In a world full of bloated, vibecoded slop, it's important to remember that it *is* possible to do meaningful work using small amounts of memory regardless of how high-level your programming language may seem. All it takes is human intelligence and patience.
+The goal is simple: **Solve every Advent of Code problem in TI-Nspire MicroPython using just over 2MB of heap space per problem.** In a world full of bloated, vibecoded slop, it's important to remember that it *is* possible to do meaningful work using small amounts of memory regardless of how high-level your programming language may seem. All it takes is intelligence and patience.
 
 Here are the details of my platform on a blank shell:
 
@@ -25,6 +25,12 @@ You'll notice I have a few funny looking scripts, [`get_all_inputs.sh`](./get_al
 First of all, I apologize for the very hacky nature of these. It Works On My Machine™ which is composed of a Fedora host and a Windows VM in VirtualBox which I use to run the proprietary TI-Nspire Software. If you want to reproduce this process yourself *and you get stuck,* feel free to [open an issue](https://github.com/twisted-nematic57/aoc-nspire/issues/new?labels=help+wanted) to ask for help.
 
 `get_all_inputs.sh` gets all inputs from the Advent of Code server, caches them in plaintext files, and creates a series of Python files that I'll use as starting points for solutions to each day of each year. Then, `nspire_setup_macro.ahk` will copy-paste them into the proprietary TI-Nspire Software so that I can edit my Python files on the physical calculator itself. The pasting process, however, happens on a year-by-year basis, meaning that as of mid-2026, I have to run the AutoHotKey script 10 times just to paste all my files. The main justification for this is that it makes it easier to periodically check that everything that has been pasted so far is correct and it makes it easier to restart the pasting process after a possible error.
+
+## SolveKit-nspire
+
+I suppose there's nothing stopping anyone else with a TI-Nspire CX II [CAS] from also completing Advent of Code on their calculator. If you'd like to do so, take a look at [`get_all_inputs.sh`](./get_all_inputs.sh), [`nspire_setup_macro.ahk`](./nspire_setup_macro.ahk), [`template.py`](./template.py), and [`_runner.py`](./_runner.py). Copy `_runner.py` into a new document, and create solutions based on `template.py`. Then change the import statement & flags at the top of `_runner.py` as you work through solutions and want to benchmark them/analyze heap usage etc.
+
+The base name of this subproject is "SolveKit" becuase it's effectively a lean TI-Nspire MicroPython port of my full-fledged programming puzzle solving toolkit for use with Java and IntelliJ IDEA called [SolveKit](https://github.com/twisted-nematic57/SolveKit).
 
 ## AoC Policies
 

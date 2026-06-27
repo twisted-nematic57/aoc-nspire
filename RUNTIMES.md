@@ -1,10 +1,10 @@
 # Table of Runtimes
 
-All values recorded here are measures of **core algorithmic runtime** and disregard initial script initialization & output printing. Print statements are disabled by changing the global variable `l` to 0 at the top of the solution source code; Because it is declared as `const`, *no checks are made at runtime* to decide if print statements should run or not. See [template.py](./template.py) to see the code corresponding to all this.
+All values recorded here are measures of **core algorithmic runtime** and disregard initial script initialization & output printing. Print statements in the body of the solution (ALL of which are extremely performace intensive) are disabled at compile time by wrapping all statements in an if-block that checks a `const` variable.
 
-All measurements were taken on a non-overclocked Revision AU TI-Nspire CX II CAS that was not plugged into USB and had no accessories attached.
+All measurements were taken on a stock clock (~396 MHz) Revision AU TI-Nspire CX II CAS that was not plugged into USB and had no accessories attached.
 
-Runtimes slightly fluctuate run-to-run. Absolute minimum, best-case values that have ever occured over dozens of runs are recorded in the tables below.
+Runtimes fluctuate by a few milliseconds run-to-run. **Absolute minimum** recorded execution times over 1024 consecutive runs are recorded in the tables below.
 
 Note that `ticks_ms()` on this MicroPython platform has 0.01 second precision.
 
